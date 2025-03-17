@@ -2,14 +2,13 @@ package app.entity;
 
 import app.utils.Constants;
 
-public class Customer {
+public class Employee {
     private String name;
     private double salary;
 
-    public Customer() {
-    }
 
-    public Customer(String name, double salary) {
+
+    public Employee(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
@@ -33,6 +32,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer: " + name  + ", with salary: " + Constants.CURRENCY + " " + salary;
+        return "Employee: " + name  + ", with salary: " + Constants.CURRENCY + " " + salary;
     }
 }
