@@ -18,7 +18,7 @@ public class AppModel {
     public void raiseSalary(Employee employee) {
         lock.lock();
         boolean flag = false;
-        double raise = 0;
+        double raise;
 
 
         while (!flag) {

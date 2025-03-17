@@ -5,7 +5,6 @@ import app.exception.AppException;
 public class AppValidator {
     public void validationInputEmpty(String raise)throws NullPointerException {
         if(raise.trim().isEmpty()){
-          //  System.out.println("Raise can not be empty");
             throw new NullPointerException("Raise can not be empty");
         }
     }
